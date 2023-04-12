@@ -1,49 +1,49 @@
 <p align="center">
-  <a href='https://www.tellor.io/'>
-    <img src= 'https://raw.githubusercontent.com/tellor-io/TellorBrandMaterials/master/Swoosh%20and%20wordmark%20legacy/SwooshWordmarkLegacy.png' width="250" height="200" alt='tellor.io' />
+  <a href='https://www.fetch.io/'>
+    <img src= 'https://raw.githubusercontent.com/fetch-io/FetchBrandMaterials/master/Swoosh%20and%20wordmark%20legacy/SwooshWordmarkLegacy.png' width="250" height="200" alt='fetch.io' />
   </a>
 </p>
 
 <p align="center">
-  <a href='https://twitter.com/WeAreTellor'>
-    <img src= 'https://img.shields.io/twitter/url/http/shields.io.svg?style=social' alt='Twitter WeAreTellor' />
+  <a href='https://twitter.com/WeAreFetch'>
+    <img src= 'https://img.shields.io/twitter/url/http/shields.io.svg?style=social' alt='Twitter WeAreFetch' />
   </a>
 </p>
 
 
-## Sample project UsingTellor <a name="sample"> </a>
+## Sample project UsingFetch <a name="sample"> </a>
 
-<b>The Tellor oracle</b> is a decentralized oracle. It provides an option for contracts to interact securely with and obtain data from off-chain.
+<b>The Fetch oracle</b> is a decentralized oracle. It provides an option for contracts to interact securely with and obtain data from off-chain.
 
-This repository aims to provide an updated version of sample code that uses Tellor by using Ethers.js, Waffle,and Hardhat.
+This repository aims to provide an updated version of sample code that uses Fetch by using Ethers.js, Waffle,and Hardhat.
 
-For more in-depth information about Tellor, check out our [documentation](https://docs.tellor.io/tellor/).
+For more in-depth information about Fetch, check out our [documentation](https://docs.fetch.io/fetch/).
 
 Quick references are included below:
 
-# Implement Tellor into your project
-This repo already includes the [usingTellor](https://github.com/tellor-io/usingtellor) package.
+# Implement Fetch into your project
+This repo already includes the [usingFetch](https://github.com/fetch-io/usingfetch) package.
 
 ## How to use
 #### 1. Clone project and install dependencies
 
 ```bash
-git clone git@github.com:tellor-io/sampleUsingTellor.git
+git clone git@github.com:fetch-io/sampleUsingFetch.git
 npm install
 ```
 
 #### 2. How to Use
-Just inherit the UsingTellor contract, passing the Tellor address as a constructor argument:
+Just inherit the UsingFetch contract, passing the Fetch address as a constructor argument:
 
 Here's an example:
 ```solidity
-contract PriceContract is UsingTellor {
+contract PriceContract is UsingFetch {
 
   uint256 public btcPrice;
 
-  //This Contract now has access to all functions in UsingTellor
+  //This Contract now has access to all functions in UsingFetch
 
-  constructor(address payable _tellorAddress) UsingTellor(_tellorAddress) {}
+  constructor(address payable _fetchAddress) UsingFetch(_fetchAddress) {}
 
   function setBtcPrice() public {
 
@@ -63,7 +63,7 @@ contract PriceContract is UsingTellor {
 }
 ```
 
-#### 3. The sample contract `SampleUsingTellor` has access to the following Tellor functions:
+#### 3. The sample contract `SampleUsingFetch` has access to the following Fetch functions:
 
 ```solidity
 /**
@@ -188,14 +188,14 @@ function retrieveData(bytes32 _queryId, uint256 _timestamp)
   returns (bytes memory);
 ```
 
-#### Tellor Playground:
+#### Fetch Playground:
 
-For ease of use, the  `UsingTellor`  repo comes with a version of the [Tellor Playground](https://github.com/tellor-io/TellorPlayground) contract for easier integration. The most useful Playground functions for testing are as follows:
+For ease of use, the  `UsingFetch`  repo comes with a version of the [Fetch Playground](https://github.com/fetch-io/FetchPlayground) contract for easier integration. The most useful Playground functions for testing are as follows:
 
 ```solidity
 /**
  * @dev A mock function to submit a value to be read without staking needed
- * @param _queryId The tellorId to associate the value to
+ * @param _queryId The fetchId to associate the value to
  * @param _value the value for the queryId
  * @param _nonce the current value count for the query id (just use 0)
  * @param _queryData the data used by reporters to fulfill the data query
@@ -204,7 +204,7 @@ function submitValue(bytes32 _queryId, bytes calldata _value, uint256 _nonce, by
 
 /**
  * @dev A mock function to create a dispute
- * @param _queryId The tellorId to be disputed
+ * @param _queryId The fetchId to be disputed
  * @param _timestamp the timestamp of the value to be disputed
  */
 function beginDispute(bytes32 _queryId, uint256 _timestamp) external;
@@ -234,14 +234,14 @@ npx hardhat run --network <your-network> scripts/deploy.js
 Join our Discord:
 [<img src="./public/discord.png" width="24" height="24">](https://discord.gg/teAMSZAfJZ)
 
-Check out our issues log here on Github or contribute to our future plans to build a better miner and more examples of data secured by Tellor.
+Check out our issues log here on Github or contribute to our future plans to build a better miner and more examples of data secured by Fetch.
 
 
 #### Contributors<a name="contributors"> </a>
 
-This repository is maintained by the Tellor team - [www.tellor.io](https://www.tellor.io)
+This repository is maintained by the Fetch team - [www.fetch.io](https://www.fetch.io)
 
 
 #### Copyright
 
-Tellor Inc. 2022
+Fetch Inc. 2022
