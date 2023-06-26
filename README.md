@@ -223,14 +223,6 @@ Just run hardhat run with desired Network
 npx hardhat run --network <your-network> scripts/deploy.js
 ```
 
-
-#### How to Contribute<a name="how2contribute"> </a>  
-Join our Discord:
-[<img src="./public/discord.png" width="24" height="24">](https://discord.gg/fetchoracle)
-
-Check out our issues log here on Github or contribute to our future plans to build a better miner and more examples of data secured by Fetch.
-
-
 #### Contributors<a name="contributors"> </a>
 
 This repository is maintained by the Fetch team - [www.fetchoracle.com](https://www.fetchoracle.com)
