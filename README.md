@@ -224,12 +224,6 @@ npx hardhat run --network <your-network> scripts/deploy.js
 ```
 
 
-#### Maintainers <a name="maintainers"> </a>
-[@themandalore](https://github.com/themandalore)
-<br>
-[@brendaloya](https://github.com/brendaloya)
-
-
 #### How to Contribute<a name="how2contribute"> </a>  
 Join our Discord:
 [<img src="./public/discord.png" width="24" height="24">](https://discord.gg/fetchoracle)
@@ -244,4 +238,4 @@ This repository is maintained by the Fetch team - [www.fetchoracle.com](https://
 
 #### Copyright
 
-Fetch Inc. 2022
+Fetch Inc. 2023
