@@ -1,6 +1,6 @@
 <p align="center">
   <a href='https://www.fetchoracle.com/'>
-    <img src= 'https://github.com/fetchoracle/dataFeed/raw/dev/public/Fetch_FETCH.svg' width="250" height="200" alt='fetchoracle.com' />
+    <img src= 'https://github.com/fetchoracle/dataFeed/raw/dev/public/Fetch_FETCH.svg' width="80" height="80" alt='fetchoracle.com' />
   </a>
 </p>
 
