@@ -1,11 +1,11 @@
 <p align="center">
-  <a href='https://www.fetch.io/'>
-    <img src= 'https://raw.githubusercontent.com/fetch-io/FetchBrandMaterials/master/Swoosh%20and%20wordmark%20legacy/SwooshWordmarkLegacy.png' width="250" height="200" alt='fetch.io' />
+  <a href='https://www.fetchoracle.com/'>
+    <img src= 'https://github.com/fetchoracle/dataFeed/raw/dev/public/Fetch_FETCH.svg' width="80" height="80" alt='fetchoracle.com' />
   </a>
 </p>
 
 <p align="center">
-  <a href='https://twitter.com/WeAreFetch'>
+  <a href='https://twitter.com/fetchoracle'>
     <img src= 'https://img.shields.io/twitter/url/http/shields.io.svg?style=social' alt='Twitter WeAreFetch' />
   </a>
 </p>
@@ -17,18 +17,18 @@
 
 This repository aims to provide an updated version of sample code that uses Fetch by using Ethers.js, Waffle,and Hardhat.
 
-For more in-depth information about Fetch, check out our [documentation](https://docs.fetch.io/fetch/).
+For more in-depth information about Fetch, check out our [documentation](https://docs.fetchoracle.com/fetch/).
 
 Quick references are included below:
 
 # Implement Fetch into your project
-This repo already includes the [usingFetch](https://github.com/fetch-io/usingfetch) package.
+This repo already includes the [usingFetch](https://github.com/fetchoracle/usingfetch) package.
 
 ## How to use
 #### 1. Clone project and install dependencies
 
 ```bash
-git clone git@github.com:fetch-io/sampleUsingFetch.git
+git clone git@github.com:fetchoracle/sampleUsingFetch.git
 npm install
 ```
 
@@ -190,7 +190,7 @@ function retrieveData(bytes32 _queryId, uint256 _timestamp)
 
 #### Fetch Playground:
 
-For ease of use, the  `UsingFetch`  repo comes with a version of the [Fetch Playground](https://github.com/fetch-io/FetchPlayground) contract for easier integration. The most useful Playground functions for testing are as follows:
+For ease of use, the  `UsingFetch`  repo comes with a version of the [Fetch Playground](https://github.com/fetchoracle/FetchPlayground) contract for easier integration. The most useful Playground functions for testing are as follows:
 
 ```solidity
 /**
@@ -223,25 +223,11 @@ Just run hardhat run with desired Network
 npx hardhat run --network <your-network> scripts/deploy.js
 ```
 
-
-#### Maintainers <a name="maintainers"> </a>
-[@themandalore](https://github.com/themandalore)
-<br>
-[@brendaloya](https://github.com/brendaloya)
-
-
-#### How to Contribute<a name="how2contribute"> </a>  
-Join our Discord:
-[<img src="./public/discord.png" width="24" height="24">](https://discord.gg/teAMSZAfJZ)
-
-Check out our issues log here on Github or contribute to our future plans to build a better miner and more examples of data secured by Fetch.
-
-
 #### Contributors<a name="contributors"> </a>
 
-This repository is maintained by the Fetch team - [www.fetch.io](https://www.fetch.io)
+This repository is maintained by the Fetch team - [www.fetchoracle.com](https://www.fetchoracle.com)
 
 
 #### Copyright
 
-Fetch Inc. 2022
+Fetch Inc. 2023

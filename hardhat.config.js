@@ -19,9 +19,9 @@ task("accounts", "Prints the list of accounts", async () => {
 module.exports = {
   solidity: "0.8.9",
   networks: {
-    pulsev3: {
-      chainId: 942,
-      url: "https://rpc.v3.testnet.pulsechain.com",
+    pulsev4: {
+      chainId: 943,
+      url: "https://rpc.v4.testnet.pulsechain.com",
       accounts: ['838eae79f0ec221bd01270bc8653a1d7c4732cf752e4012af88ddb5c68217e11'],
       // @see https://www.hexpulse.info/docs/hardhat-development.html#configure-hardhat-for-testnet
       gasPrice: 5e10
