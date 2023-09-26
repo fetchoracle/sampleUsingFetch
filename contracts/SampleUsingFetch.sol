@@ -4,14 +4,14 @@ pragma solidity >=0.8.0;
 import "usingfetch/contracts/UsingFetch.sol";
 
 contract SampleUsingFetch is UsingFetch {
-    bytes public queryData = abi.encode("SpotPrice", abi.encode("eth", "usd"));
+    bytes public queryData = abi.encode("SpotPrice", abi.encode("pls", "usd"));
     bytes32 public queryId = keccak256(queryData);
-    uint256 public ethPrice;
+    uint256 public plsPrice;
 
     // Input fetch oracle address
     constructor(address payable _fetchAddress) UsingFetch(_fetchAddress) {}
 
-    function readEthPrice()
+    function readPlsPrice()
         public
     {
         // Retrieve data at least 15 minutes old to allow time for disputes
@@ -22,7 +22,7 @@ contract SampleUsingFetch is UsingFetch {
             // Check that the data is not too old
             if(block.timestamp - _timestampRetrieved < 24 hours) {
                 // Use the helper function _sliceUint to parse the bytes to uint256
-                ethPrice = _sliceUint(_value);
+                plsPrice = _sliceUint(_value);
             }
         }
     }
