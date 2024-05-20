@@ -1,6 +1,6 @@
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
-const {abi, bytecode} = require("usingfetch/artifacts/contracts/FetchPlayground.sol/FetchPlayground.json");
+const {abi, bytecode} = require("../artifacts/usingfetch/contracts/FetchPlayground.sol/FetchPlayground.json");
 
 describe("Fetch", function() {
   let sampleUsingFetch;
@@ -33,7 +33,7 @@ describe("Fetch", function() {
     await ethers.provider.send("evm_increaseTime", [901]);
     await ethers.provider.send("evm_mine");
     // retrieve value from playground in our sample contract
-    await sampleUsingFetch.readPLSPrice();
+    await sampleUsingFetch.readPlsPrice();
     // read our saved value from the sample contract
     const retrievedVal = await sampleUsingFetch.plsPrice();
     expect(BigInt(retrievedVal)).to.equal(mockValue);
