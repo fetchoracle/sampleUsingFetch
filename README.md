@@ -39,15 +39,15 @@ Here's an example:
 ```solidity
 contract PriceContract is UsingFetch {
 
-  uint256 public btcPrice;
+  uint256 public plsPrice;
 
   //This Contract now has access to all functions in UsingFetch
 
   constructor(address payable _fetchAddress) UsingFetch(_fetchAddress) {}
 
-  function setBtcPrice() public {
+  function setPlsPrice() public {
 
-    bytes memory _b = abi.encode("SpotPrice",abi.encode("btc","usd"));
+    bytes memory _b = abi.encode("SpotPrice",abi.encode("pls","usd"));
     bytes32 _queryId = keccak256(_b);
 
     uint256 _timestamp;
@@ -58,7 +58,7 @@ contract PriceContract is UsingFetch {
     require(_timestamp > 0, "No data exists");
     require(block.timestamp - _timestamp < 24 hours, "Data is too old");
 
-    btcPrice = abi.decode(_value,(uint256));
+    plsPrice = abi.decode(_value,(uint256));
   }
 }
 ```
@@ -230,4 +230,4 @@ This repository is maintained by the Fetch team - [www.fetchoracle.com](https://
 
 #### Copyright
 
-Fetch Inc. 2023
+Fetch Inc. 2024
